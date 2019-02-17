@@ -19,6 +19,9 @@ public class Address {
     @Column(name = "pin_code")
     private Long pincode;
 
+    @OneToOne(fetch = FetchType.EAGER, mappedBy = "address", cascade = CascadeType.ALL)
+    private Employee employee;
+
     public Integer getAddressId() {
         return addressId;
     }

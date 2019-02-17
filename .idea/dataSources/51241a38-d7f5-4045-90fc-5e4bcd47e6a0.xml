@@ -1287,7 +1287,7 @@
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="328" parent="312" name="FKi4egas1vsxf9l8w24iseqlchw">
+    <index id="328" parent="312" name="ADDRESS_ID">
       <ColNames>ADDRESS_ID</ColNames>
       <Type>btree</Type>
     </index>
@@ -1300,13 +1300,7 @@
       <ColNames>EMPLOYEE_ID</ColNames>
       <UnderlyingIndexName>EMPLOYEE_ID_UNIQUE</UnderlyingIndexName>
     </key>
-    <foreign-key id="331" parent="312" name="FKi4egas1vsxf9l8w24iseqlchw">
-      <ColNames>ADDRESS_ID</ColNames>
-      <RefSchemaName>test3</RefSchemaName>
-      <RefTableName>address</RefTableName>
-      <RefColNames>address_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="332" parent="312" name="employee_ibfk_1">
+    <foreign-key id="331" parent="312" name="employee_ibfk_1">
       <ColNames>ADDRESS_ID</ColNames>
       <RefSchemaName>test3</RefSchemaName>
       <RefTableName>address</RefTableName>
